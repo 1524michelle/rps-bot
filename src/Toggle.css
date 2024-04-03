@@ -1,0 +1,43 @@
+.container {
+    height: 36px;
+    width: 64px;
+    border-radius: 999px;
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    z-index: 9999;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.light .container {
+    background-color: khaki;
+}
+
+.dark .container {
+    background-color: darkcyan;
+}
+
+.switch {
+    height: 32px;
+    width: 32px;
+    border-radius: 999px;
+    position: absolute; /* absolute in its container */
+    top: 2px;
+    transition: left 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.light .switch {
+    background-color: gold;
+    left: 2px;
+}
+
+.dark .switch {
+    background-color: skyblue;
+    left: calc(100% - 32px - 2px);
+}
+
+.toggle-icon {
+    padding: 15% 15%;
+    width: 70%;
+    height: 70%;
+}
