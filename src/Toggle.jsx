@@ -1,7 +1,7 @@
 // import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-import sunIcon from '../public/sun.png';
-import moonIcon from '../public/moon.png';
+import sunIcon from '/sun.png';
+import moonIcon from '/moon.png';
 import './Toggle.css';
 
 const Toggle = ({ mode , onClick }) => {

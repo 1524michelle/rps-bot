@@ -13,9 +13,12 @@
   --button-background-light: #242424;
   --button-background-dark: white;
 
-  --result-draw-color: rgb(171, 171, 171);
-  --result-lose-color: rgb(179, 63, 63);
-  --result-win-color: rgb(97, 152, 97);
+  --result-draw-color-light: rgb(209, 209, 209);
+  --result-lose-color-light: rgb(245, 95, 95);
+  --result-win-color-light: rgb(104, 205, 135);
+  --result-draw-color-dark: rgb(171, 171, 171);
+  --result-lose-color-dark: rgb(179, 63, 63);
+  --result-win-color-dark: rgb(97, 152, 97);
 }
 
 body, html {
@@ -64,16 +67,28 @@ img {
   border-radius: 8px;
 }
 
-.draw {
-  background-color: var(--result-draw-color);
+.draw.light {
+  background-color: var(--result-draw-color-light);
 }
 
-.lose {
-  background-color: var(--result-lose-color);
+.lose.light {
+  background-color: var(--result-lose-color-light);
 }
 
-.win {
-  background-color: var(--result-win-color);
+.win.light {
+  background-color: var(--result-win-color-light);
+}
+
+.draw.dark {
+  background-color: var(--result-draw-color-dark);
+}
+
+.lose.dark {
+  background-color: var(--result-lose-color-dark);
+}
+
+.win.dark {
+  background-color: var(--result-win-color-dark);
 }
 
 #score {
@@ -93,7 +108,8 @@ img {
 }
 
 #play-again-button:hover {
-  background-color: #dcdcdc;
+  /* background-color: #dcdcdc; */
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
 #new-game-link {

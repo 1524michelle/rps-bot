@@ -94,14 +94,14 @@ function App() {
       <div>
         {(!userChoice && !botChoice) ? (
           <div>
-            <img src="../public/bot-emoji.png" alt="robot emoji" />
+            <img src="/bot-emoji.png" alt="robot emoji" />
             <h2>select your choice!</h2>
             <button className='emoji-button' role='button' onClick={() => setUserChoice('rock')}>👊🏼</button>
             <button className='emoji-button' role='button' onClick={() => setUserChoice('paper')}>🖐🏼</button>
             <button className='emoji-button' role='button' onClick={() => setUserChoice('scissors')}>✌🏼</button>
           </div>
         ) : (
-          <div className={`result-page ${result}`}>
+          <div className={`result-page ${result} ${mode}`}>
             <h1>{result}</h1>
             <h3>user: {emojiMap[userChoice]}, bot: {emojiMap[botChoice]}</h3>
             <h1 id='score'>{userScore} : {botScore}</h1>
